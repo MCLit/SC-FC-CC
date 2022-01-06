@@ -3,7 +3,7 @@
 # Background
 Structural connectivity and functional connectivity were related to each other in a sample of 249 Human Connectome Project's subjects to produce models of healthy cognitive function. Principal Component Regression method was combined with 10-fold cross-validation to generate the models. 
 
-# Folder titled "scripts" contains the following:
+# Folder "scripts" contains the following:
 
 - cognition.m contains the script used to apply Principal Component Analysis to cognitive dataset
 - base.m contains the base script used to call on function stepwise_cv.m
