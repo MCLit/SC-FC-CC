@@ -1,5 +1,5 @@
 % note that here de-normalization of beta values in connectome was not conducted, because structure and function have different scales
-% for unimodal data, users may wish to replace line 28 script in line 3 and 4, and then remove % from line 60:
+% for unimodal data, users may wish to replace line 24 script in line 3 and 4, and then remove % from line 58:
 % >> b_original_space = b_original_space./solution.std';
 % >> mdl_pca = [b_constant - solution.mus*b_original_space; b_original_space]; % this is the model in space of connectivity, 
 
@@ -15,8 +15,6 @@ solution = J_solution; mdl = J_mdl;
 load('mdl_J_FAC1.mat', 'Y', 'J') % Y is the cognitive factor scores, S is each subject's connectome prior to PCA
 X = J;
 fname = 'J1_b.mat';
-fname_e = 'J1.edge';
-fname_c = 'J1.csv';
 
 % project model betas to winning components - i.e betas in pca coefficient space
 b = mdl.Coefficients.Estimate; % model betas
