@@ -1,3 +1,7 @@
+% note that here de-normalization of beta values in connectome was not conducted, because structure and function have different scales
+% for unimodal data, users may wish to replace line 28 script in line 3 and 4, and then remove % from line 60:
+% >> b_original_space = b_original_space./solution.std';
+% >> mdl_pca = [b_constant - solution.mus*b_original_space; b_original_space]; % this is the model in space of connectivity, 
 
 clear
 n_perm = 10000; % number of permutations
